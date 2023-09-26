@@ -24,12 +24,12 @@ while True:
             response = requests.post(post_url, json=payload, headers=headers)
 
             if response.status_code == 200:
-                winsound.Beep(1000, 1000)  # Beep at 1000 Hz for 200 milliseconds
+                winsound.Beep(2000, 1000)  # Beep at 1000 Hz for 200 milliseconds
                 print("POST request successful")
             else:
                 print(f"POST request failed with status code: {response.status_code}")
                 for i in range(0,5):
-                    winsound.Beep(500, 500)
+                    winsound.Beep(1000, 300)
 
             # Continue with the rest of your code
             points = np.array([qrcode.polygon], np.int32).reshape((-1, 1, 2))
