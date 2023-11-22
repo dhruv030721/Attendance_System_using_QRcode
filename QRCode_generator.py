@@ -3,8 +3,8 @@ import json
 
 
 student_data = {
-    "name" : "Aryan",
-    "enrollment_no" : "211240107027",
+    "name" : "Nevil",
+    "enrollment_no" : "211240107066",
     "branch" : "Computer"
 }
 
@@ -18,4 +18,4 @@ qr.make(fit = True)
 
 qr_img = qr.make_image(fill_color = "black", back_color = "white")
 
-qr_img.save("27.png")
+qr_img.save("66.png")
